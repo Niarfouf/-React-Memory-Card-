@@ -18,8 +18,11 @@ export default function GameOver({
                 </p>
             )}
 
-            <button onClick={() => changeDifficulty(null)}>
-                Chose difficulty
+            <button
+                className="play-again-button"
+                onClick={() => changeDifficulty(null)}
+            >
+                Play again !
             </button>
         </div>
     )

@@ -16,25 +16,31 @@ export default function App() {
     return (
         <>
             <div className="header">
-                <h1 className="main-title">Pokemon Memory Game</h1>
+                <img
+                    className="main-title"
+                    src="./src/img/pokemon-23.svg"
+                ></img>
+                <h1> Memory Game</h1>
                 <p className="description">
                     Click on every image only once to win the game, every time
-                    you click images will be placed randomly
+                    you click images will be placed randomly.
                 </p>
+                <div className="score-container">
+                    <p className="best-score">Best score : {bestScore}</p>
+                </div>
             </div>
 
-            <div className="score-container">
-                <p className="best-score">Best score : {bestScore}</p>
+            <div className="main-content">
+                {!difficulty ? (
+                    <Difficulty handleDifficulty={setDifficulty}></Difficulty>
+                ) : (
+                    <Game
+                        difficulty={difficulty}
+                        handleBestScore={handleBestScore}
+                        handleDifficulty={setDifficulty}
+                    ></Game>
+                )}
             </div>
-            {!difficulty ? (
-                <Difficulty handleDifficulty={setDifficulty}></Difficulty>
-            ) : (
-                <Game
-                    difficulty={difficulty}
-                    handleBestScore={handleBestScore}
-                    handleDifficulty={setDifficulty}
-                ></Game>
-            )}
         </>
     )
 }

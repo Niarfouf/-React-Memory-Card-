@@ -7,19 +7,22 @@ export default function Difficulty({ handleDifficulty }) {
                     className="difficulty-button"
                     onClick={() => handleDifficulty(8)}
                 >
-                    Easy
+                    <p>Easy</p>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"></img>
                 </button>
                 <button
                     className="difficulty-button"
                     onClick={() => handleDifficulty(14)}
                 >
-                    Medium
+                    <p>Medium</p>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"></img>
                 </button>
                 <button
                     className="difficulty-button"
                     onClick={() => handleDifficulty(20)}
                 >
-                    Hard
+                    <p>Hard</p>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png"></img>
                 </button>
             </div>
         </div>

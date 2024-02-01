@@ -22,7 +22,7 @@ export default function Game({
         for (let i = 0; i < difficulty; i++) {
             let randomId
             do {
-                randomId = Math.floor(Math.random() * 151)
+                randomId = Math.floor(Math.random() * 251 + 1)
             } while (idArray.includes(randomId))
             idArray.push(randomId)
         }
