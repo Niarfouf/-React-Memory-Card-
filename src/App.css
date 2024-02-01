@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+#root {
+    background-color: rgb(223, 223, 223);
+    min-height: 100vh;
+}
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 5rem;
+    gap: 2rem;
+}
+h3 {
+    text-align: center;
+    background-color: aliceblue;
+}
+img {
+    width: 125px;
+    margin-bottom: 0.5rem;
+}
+.card {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+.card:hover {
+    background-color: brown;
+}
