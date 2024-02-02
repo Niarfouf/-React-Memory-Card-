@@ -33,10 +33,11 @@ export default function Game({
         if (!memory.includes(pokemonId)) {
             const shuffledArray = randomOrder.sort(() => Math.random() - 0.5)
             setRandomOrder(shuffledArray)
-            setScore(score + 1)
+            let newScore = score + 1
+            setScore(newScore)
             setMemory([...memory, pokemonId])
-            if (memory.length === pokemonInfo.length) {
-                handleBestScore(score)
+            if (newScore === pokemonInfo.length) {
+                handleBestScore(newScore)
                 setIsGameOver(true)
             }
         } else {
@@ -65,8 +66,7 @@ export default function Game({
 
     return (
         <>
-            {' '}
-            {!isGameOver ? (
+            {isGameOver == false ? (
                 <>
                     <div className="score">
                         <p>Actual score : {score}</p>
