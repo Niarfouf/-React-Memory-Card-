@@ -17,8 +17,9 @@ export default function App() {
         <>
             <div className="header">
                 <img
+                    alt="pokemon"
                     className="main-title"
-                    src="./src/img/pokemon-23.svg"
+                    src="/pokemon-23.svg"
                 ></img>
                 <h1> Memory Game</h1>
                 <p className="description">

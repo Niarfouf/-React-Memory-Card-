@@ -12,7 +12,7 @@ html {
 #root {
     background-color: rgb(223, 223, 223);
     min-height: 100vh;
-    background-image: url('./img/background-img.jpg');
+    background-image: url('/background-img.jpg');
     background-size: cover;
 }
 .cards-grid {
